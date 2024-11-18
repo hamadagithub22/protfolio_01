@@ -1,0 +1,550 @@
+/****** BEGIN ROOT SECTION *******/
+:root{
+    --primaryColor: #ff274b;
+    --secondaryColor: #f7bcf7;
+    --lightColor: #ffffff;
+    --bgColor-1: #171a1c;
+    --BgCo9lor-2: #22282a;
+    --padding: 8%;
+    --paddin-top: 10%;
+    --padding-botton: 10%;
+}
+/****** END ROOT  SECTION *******/
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/***************** ALL THE CODE *************/
+
+*{
+
+    font-family: "Poppins", sans-serif;
+  font-style: italic;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+h1{
+    color: #007bff ;
+}
+
+
+
+/*==================================================================*/
+/*======================== << spiner >>==============================*/
+/*==================================================================*/
+.cover{
+    background-color: #4e4e4e;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s;
+
+}
+
+
+/* keyframes */
+.cover-hide{
+    opacity: 0;
+}
+
+.cover .spinner i{
+   
+    font-size: 45px;
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    color: rgb(195, 178, 178);
+}
+
+@keyframes spin {
+    to{
+        transform: rotate(5turn);
+    }
+}
+
+
+
+/*************** BEGAIN HEADER **************/
+header{
+    padding: 20px;
+    z-index: 1;
+    background-color: rgb(64, 64, 248);
+    position: fixed;
+    width: 100%;
+
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    align-items: center;
+}
+
+header .navs a{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    transition: 0.4s;
+    font-weight: bold;
+}
+
+header .navs a:hover{
+    color: rgb(227, 104, 3);
+  
+}
+
+header nav .nav-brand{
+    font-size: 25px;
+    font-weight: bold;
+}
+header nav .nav-brand a{
+    text-decoration: none;
+    color: wheat;
+}
+
+
+/************  END HEADER *********/
+
+
+/************* BEGIN MAIN SECTION ***************/
+section{
+    padding: 100px 200px;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(../images/2.PNG);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* background-color: var(--BgCo9lor-2);   */
+}
+
+
+
+
+.main h2{
+    color: rgb(228, 136, 15);
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+
+.main h4{
+    color: rgb(251, 250, 250);
+}
+
+.main h2 span{
+    color: aquamarine;
+    font-size: 2em;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+
+
+
+.main-btn{
+    color: rgb(244, 241, 247);
+    background-color: blue;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+
+
+
+
+.main-btn:hover{
+    background-color: rgb(71, 83, 248);
+    transform: scale(1.1);
+
+}
+
+
+
+.social-icons a{
+    color: aliceblue;
+    font-size: 2em;
+    font-weight: 400;
+    letter-spacing: 10px;  
+    transition: 0.2s;
+}
+.social-icons a:hover{
+   color: antiquewhite;
+}
+
+
+
+/************  END HEADER *********/ 
+
+
+
+
+
+/************ BEGAIN CARDS SECTION ********/
+
+
+
+
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+.icon {
+    text-align: center;   
+}
+
+
+.info{
+    text-align: center;   
+}
+
+
+.info h3{
+    color: #37bce9;
+    font-size: 1.6em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+
+.info p{
+    color: #171a1c;
+}
+
+/************ END CARDS SECTION ********/
+
+
+
+/************ BEGAIN SKILLS  SECTION ********/
+
+/*=================================================================*/
+/*=====================<<  servies sec============================*/
+/*=================================================================*/
+
+#services div p{
+    padding-bottom: 50px;
+    color: gray;
+  
+    
+}
+#services .container img{
+    padding-bottom: 20px;
+    transition: 0.3s;
+}
+
+#services .title{
+    padding-bottom: 50px;
+    font-size: 40px;
+}
+
+
+#services .container img:hover{
+    transform: scale(1.1);
+
+}
+
+.contact-us{
+    background-color: var(--bgColor-1);
+    height: 1000px;
+    color: var(--lightColor);
+   
+}
+
+.contact-us h2{
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 700;
+    padding-top: 10%;
+    margin-bottom: 10%;
+    
+    
+}
+/************ END SKILLS  SECTION ********/
+
+
+
+
+
+
+
+
+
+
+/************ END CARD-CONTACT-US  SECTION ********/
+
+
+
+
+
+
+
+
+.my-skills{
+    /* background-color:    var(--BgCo9lor-2); */
+    background-color: #efeded;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    
+  
+ 
+   
+}
+
+
+.my-skills-s img{
+   
+    padding: 10px;
+    cursor: pointer;
+    margin: auto;
+
+    
+   
+}
+
+.my-skills .my-skills-s img{
+    width: 200px;
+    height: 200px;
+   display: flex;
+    border-radius: 20px ;
+    align-items: center;
+    transition: 0.4s;
+    
+   
+}  
+
+.my-skills .my-skills-s img:hover{
+    transform: scale(1.1);
+}
+  
+.my-skills .row div{
+    padding: 30px;
+}
+
+.my-skills .title1{
+    color: rgb(50, 145, 223);
+    text-align: center;
+    padding-bottom: 100px;
+    font-size: 40px;
+    padding-top: 50px;
+    
+    
+}
+
+
+
+
+
+
+
+
+/*=================================================================*/
+/*=====================<< contact us sec============================*/
+/*=================================================================*/
+#contacts{
+    height: 70vh;
+}
+#contacts .form .form-control{
+    margin: 10px;
+  
+}
+
+#contacts .form textarea{
+    margin: 10px;
+    width: 100%;
+    height: 100px;
+}
+#contacts .form a{
+    margin: 10px;
+}
+#contacts .container{
+    padding: 50px;
+    background-color: #efeded; 
+    box-shadow: rgb(rgb(96, 69, 69), green, blue);
+    border: none;
+}
+
+
+
+
+/*=================================================================*/
+/*=====================<< contact us sec============================*/
+/*=================================================================*/
+
+#work{
+    height: auto;
+    text-align: center;
+
+ 
+
+}
+#work h1{
+    padding-bottom: 100px;
+}
+
+#work h3{
+    color: #007bff ;
+}
+
+
+#work p{
+    color: gray;
+}
+
+
+
+
+
+
+
+.menu{
+ 
+  width: 8%;
+ display: none;
+  margin: 0%;
+  float: right;
+  color: white;
+ 
+ 
+}
+.about{
+    background-color: black;
+  
+    box-sizing: border-box;
+ 
+    margin: 10%;
+}
+
+
+
+
+
+
+
+
+/************ BEGAIN FOOTER ********/
+footer{
+    background-color: var(--BgCo9lor-2);
+    color: aliceblue;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-title{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.footer-title span{
+   color: #15b0e4; 
+}
+.footer .social-icons a{
+    font-size: 1.2em;
+    padding: 0 10px 0 0;
+   
+
+
+}
+
+
+/************ END FOOTER   ********/
+
+
+
+
+
+
+
+
+
+
+
+/*================================================================================*/
+/*===========================<< media screen >>===================================*/
+/*================================================================================*/
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+        
+    }
+    .navigtion a{
+        padding-left: 10px;
+    }
+    .title{
+        font-size: 1.8em;
+       
+    }
+    .title1{
+        color: rgb(247, 235, 235);
+        align-items: center;
+    }
+    section{
+        padding: 80px 20px;
+        align-items: center;
+        display: block;
+        width: 100%;
+    }
+    .main-content h2{
+        font-size: 1.6em;
+    }
+    .min-content h3{
+        font-size: 1.6em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    #services{
+        align-items: center;
+    }
+    #skills{
+        justify-content: center;
+        
+    }
+    .my-skills{
+        width: 100%;
+        
+    }
+    .title1{
+        color: #f7bcf7;
+        display: none;
+    }
+}
